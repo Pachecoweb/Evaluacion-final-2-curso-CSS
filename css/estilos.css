@@ -1,0 +1,53 @@
+
+header{
+	background-color:#5b7989;
+	margin:20px;
+	padding:1px 0 1p 0;
+	border-radius:10px;
+	text-align:left;
+	font-family:"Dancing Script OT";
+}
+
+#titulo-principal{
+	text-shadow:2px 2px #02010a;
+	margin-left:15px;
+}
+
+.contenedor1{
+	display:-webkit-flex;
+	display:flex;
+	width:50%;
+}
+
+.contenedor2{
+	width:100%;
+	margin:10px;
+}
+
+.contenedor1{
+	width:100%;
+	color:white;
+	
+}
+
+#navegador{
+	list-style-type:none;
+	text-align:right;
+	font-size:16px;
+	margin:25px;
+}
+
+#navegador ul{
+	font-size:16px;
+}
+
+
+
+#navegador li{
+	display:inline;
+	text-align:center;
+	margin:0 10px 0 0;
+	font-size:22px;
+	text-decoration:underline;
+}
+
