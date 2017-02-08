@@ -1,6 +1,23 @@
+
+@media screen and (min-width:600px){
+	{
+	}}
+	
+	
+/* Inicia espacio general y otros de la pagina web */
+
 body{
 	background:#02010a;
 	}
+
+p{
+	font-family:"Dancing Script OT";
+	font-size:22px;
+}
+
+/* termina espacio general y otros de la pagina web */
+
+/* Inicia la cabecera de la pagina web */
 
 header{
 	background-color:#5b7989;
@@ -13,13 +30,14 @@ header{
 	width:100%;
 }
 
-
-
 #titulo-principal{
 	text-shadow:2px 2px #02010a;
 	margin-left:40px;
 }
 
+/*.contenedor1 <-----Caja de la cabecera*/
+/* .contenedor2 <-----Clases que manejan al "Titulo principal" y al "menu" del navegador*/
+   
 .contenedor1{
 	display:-webkit-flex;
 	display:flex;
@@ -46,10 +64,6 @@ header{
 	margin-right:20px;
 }
 
-#navegador ul{
-	font-size:16px;
-}
-
 #navegador li{
 	display:inline;
 	text-align:center;
@@ -58,12 +72,51 @@ header{
 	text-decoration:underline;
 }	
 
+/* Inicia espacio verde */
+
 #Paisaje-1{
   background-color: #82c3a6;
   padding: 20px 70px;
   text-align:center;
 }
 #Paisaje-1 img{
-  width: 100%;
+  width: 90%;
+  box-shadow:2px 2px #02010a;
 }
 
+/* Termina espacio verde */
+/* Inicia espacio amarillo */
+
+#playa-huatulco{
+  background-color:#d5c75f;
+  padding: 20px 70px;
+  text-align:center;
+}
+#playa-huatulco img{
+  width: 50%;
+  box-shadow:2px 2px #02010a;
+}
+
+#mirada-intensa{
+  background-color:#d5c75f;
+  padding: 20px 70px;
+  text-align:center;
+}
+#mirada-intensa img{
+  width: 50%;
+  box-shadow:2px 2px #02010a;
+}
+
+.contenedor-amarillo{
+	display:-webkit-flex;
+	display:flex;
+	width:100%;
+	padding-bottom:0 auto;
+}
+
+.foto-amarillo{
+	width:100%;
+}
+	
+	
+/* Termina espacio amarillo */
