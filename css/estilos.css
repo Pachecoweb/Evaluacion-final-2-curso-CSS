@@ -1,47 +1,54 @@
+body{
+	background:#02010a;
+	}
 
 header{
 	background-color:#5b7989;
-	margin:20px;
+	margin-left:10 auto;
+	margin-right:10 auto;
 	padding:1px 0 1p 0;
-	border-radius:10px;
+	border-radius:10px 10px 0 0;
 	text-align:left;
 	font-family:"Dancing Script OT";
+	width:100%;
 }
+
+
 
 #titulo-principal{
 	text-shadow:2px 2px #02010a;
-	margin-left:15px;
+	margin-left:40px;
 }
 
 .contenedor1{
 	display:-webkit-flex;
 	display:flex;
 	width:50%;
+	padding-bottom:0 auto;
 }
 
 .contenedor2{
 	width:100%;
-	margin:10px;
+	margin:0;
 }
 
 .contenedor1{
 	width:100%;
 	color:white;
-	
+	margin:0;
 }
 
 #navegador{
 	list-style-type:none;
 	text-align:right;
 	font-size:16px;
-	margin:25px;
+	margin-top:30px;
+	margin-right:20px;
 }
 
 #navegador ul{
 	font-size:16px;
 }
-
-
 
 #navegador li{
 	display:inline;
@@ -49,5 +56,14 @@ header{
 	margin:0 10px 0 0;
 	font-size:22px;
 	text-decoration:underline;
+}	
+
+#Paisaje-1{
+  background-color: #82c3a6;
+  padding: 20px 70px;
+  text-align:center;
+}
+#Paisaje-1 img{
+  width: 100%;
 }
 
