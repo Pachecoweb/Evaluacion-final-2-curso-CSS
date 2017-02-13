@@ -1,3 +1,6 @@
+/******************************************************/
+/* ****************** INDEX.HTML **********************/
+/******************************************************/
 
 /* Inicia espacio general y otros de la pagina web */
 
@@ -7,6 +10,10 @@ body{
 	margin-left:15%;
 	}
 
+a {
+	color:white;
+}
+
 p{
 	font-family:"Dancing Script OT";
 	font-size:22px;
@@ -14,7 +21,7 @@ p{
 }
 
 /* termina espacio general y otros de la pagina web */
-/*--------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 /* Inicia la cabecera de la pagina web */
 
 header{
@@ -34,7 +41,8 @@ header{
 }
 
 /*.contenedor1 <-----Caja de la cabecera*/
-/* .contenedor2 <-----Clases que manejan al "Titulo principal" y al "menu" del navegador*/
+/* .contenedor2 <-----Clases que manejan al "Titulo principal"
+y al "menu" del navegador*/
    
 .contenedor1{
 	display:-webkit-flex;
@@ -87,6 +95,11 @@ header{
 /*--------------------------------------------------------------*/
 /* Inicia espacio amarillo */
 
+/* <<"paisajes" aplica un efecto de rotación de 10 grados cuando se coloca
+el puntero sobre ella, agrega color de sombra #82c3a6 y borde 2px y la derecha
+"retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la
+derecha cuando se coloca el puntero del ratón sobre ella.>> */
+
 #playa-huatulco{
   background-color:#d5c75f;
   padding: 40px 0;
@@ -97,22 +110,44 @@ header{
   box-shadow:2px 2px 3px #02010a;
   text-align:center;
   border-radius:15px;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+
+#playa-huatulco img:hover{
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
 }
 
 #mirada-intensa{
   background-color:#d5c75f;
   padding: 40px 0;
   text-align:center;
+  -webkit-transform:-webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
 }
 #mirada-intensa img{
   width: 75%;
   box-shadow:2px 2px 3px #02010a;
   text-align:center;
   border-radius:15px;
+  -webkit-transform:-webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+
+#mirada-intensa img:hover{
+	-webkit-transform:translate(10px,20px);
+	-moz-transform:translate(10px,20px);
+	transform:translate(10px,20px);
 }
 
 .contenedor-amarillo{
 	display:-webkit-flex;
+	display:-moz-flex;
 	display:flex;
 	width:100%;
 	padding-bottom:10px auto;
@@ -121,28 +156,88 @@ header{
 .foto-amarillo{
 	width:100%;
 }
+
 /* Termina espacio amarillo */
 /* ----------------------------------------------------------------- */
 /* Inicia espacio del Footer */
 
-footer{
-	background-color:#5b7989;
-	margin-left:0px auto;
-	margin-right:0px auto;
-	padding:10px 0;
-	border-radius:0 0 10px 10px;
+/* << FLEX–BOX >> */
+.caja-footer{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	width:100%;
+	padding-bottom:10px;
 }
 
-#footer1{
+.footer{
+	width:40%;
+	text-align:center;
+}
+/* << Termina el efecto Flex-box >> */
+
+footer{
+	background-color:#C6d5c5;
+	color:#02010a;
+	margin-left:0px auto;
+	margin-right:0px auto;
+	padding:0px auto;
+	border-radius:0 0 10px 10px;
+	font-family:"Dancing Script OT";
+}
+
+footer p{
+	font-size:24px;
+}
+
+#contacto, #politicas, #redes-sociales, #derechos-reservados{
+	font-size:35px;
+	margin-bottom:10px;
+}
+
+#footer1, #footer2, #footer3, #footer4{
 	text-wrap:normal;
+	margin:15px;
+}
+
+#footer3 ul{
+	list-style-type:none;
+	font-size:24px;
+}
+
+.viñeta1{
+	list-style-type:none;
+	background-image:url(../Untitled-1.svg);
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	margin:10px;
+}
+
+.viñeta2{
+	list-style-type:none;
+	background-image:url(../Untitled-2.svg);
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	margin:10px;
+}
+
+.viñeta3{
+	list-style-type:none;
+	background-image:url(../Untitled-3.svg);
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	margin:10px;
 }
 
 footer{
 	width:100%;
 }
 
-#contacto-footer{
-	font-family:"Dancing Script OT";
-	font-size:35px;
-	margin-bottom:10px;
-}
+/******************************************************/
+/* ************ < PAISAJES.HTML > *********************/
+/******************************************************/
+
+
