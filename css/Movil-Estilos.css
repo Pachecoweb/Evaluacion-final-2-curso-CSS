@@ -1,0 +1,179 @@
+
+/******************************************************/
+/* *********** << Versión-Mobil >> ********************/
+/******************************************************/
+
+@media only screen and (max-width:480px){
+	
+	body{
+		background:#02010a;
+		margin:50px auto;
+		width:100%;
+	}
+	
+	#contenido{
+		width:100%;
+		text-align:center;
+	}
+	
+header{
+	margin-left:10 auto;
+	margin-right:10 auto;
+	padding:5px 0 5px 0;
+	border-radius:10px 10px 0 0;
+	text-align:left;
+	font-family:"Dancing Script OT";
+	width:100%;
+	animation:miSlideIn 2s;
+}
+
+.contenedor1{
+	display:-webkit-flex;
+	display:flex;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	flex-direction:column;
+	width:100%;
+	padding-bottom:0 auto;
+}
+
+.contenedor2 h1{
+	width:100%;
+	margin:0 auto;
+	text-align:left center;
+}
+
+#navegador li{
+	text-align:center;
+	margin:0 10px;
+	font-size:30px;
+}
+
+#navegador{
+	text-align:center;
+	margin:10px auto;
+}
+
+/* Termina cabecera */
+/*--------------------------------------------------------------*/
+/* Inicia espacio verde */
+
+
+#Paisaje-1{
+  background-color: #82c3a6;
+  padding: 30px 10px;
+}
+#Paisaje-1 img{
+  width:90%;
+  box-shadow:2px 2px 3px #02010a;
+  border-radius:25px;
+  text-align:center;
+}
+
+/* Termina espacio verde */
+/*--------------------------------------------------------------*/
+/* Inicia espacio amarillo */
+
+#mirada-intensa{
+  background-color:#d5c75f;
+  padding: 20px 0;
+  text-align:center;
+  -webkit-transform:-webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+#mirada-intensa img{
+  width: 75%;
+  box-shadow:2px 2px 3px #02010a;
+  text-align:center;
+  border-radius:15px;
+  -webkit-transform:-webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+
+
+.contenedor-amarillo{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	flex-direction:column;
+	width:100%;
+	padding-bottom:10px auto;
+}
+
+.foto-amarillo{
+	width:100%;
+}
+
+/* Termina espacio amarillo */
+/* ----------------------------------------------------------------- */
+/* Inicia espacio del Footer */
+
+
+.caja-footer{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	flex-direction:column;
+	width:80%;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0px auto;
+}
+
+.footer{
+	width:100%;
+	text-align:center;
+}
+
+#footer1, #footer2, #footer3, #footer4{
+	text-wrap:normal;
+	margin-left:10px auto;
+	margin-right:10px auto;
+	text-align:center;
+}
+	
+#footer1, #footer2, #footer3{
+	border-bottom:1px solid black;
+	padding-bottom:30px;
+}
+
+/******************************************************/
+/* *********** << PAISAJES.HTML >> ********************/
+/******************************************************/
+
+
+.galeria-paisajes{
+	background-color:#d5c75f;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	flex-direction:column;
+	width:100%;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+
+
+/******************************************************/
+/* *********** << RETRATOS.HTML >> ********************/
+/******************************************************/
+
+
+.galeria-retratos{
+	background-color:#d5c75f;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	flex-direction:column;
+	width:100%;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+}

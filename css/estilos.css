@@ -1,5 +1,6 @@
+
 /******************************************************/
-/* ****************** INDEX.HTML **********************/
+/* ******** << INDEX.HTML y GENERAL >> ****************/
 /******************************************************/
 
 /* Inicia espacio general y otros de la pagina web */
@@ -7,8 +8,13 @@
 body{
 	background:#02010a;
 	width:75%;
-	margin-left:15%;
-	}
+	margin:10px auto;
+}
+
+#contenido{
+	width:900px;
+}
+
 
 a {
 	color:white;
@@ -33,6 +39,31 @@ header{
 	text-align:left;
 	font-family:"Dancing Script OT";
 	width:100%;
+	animation:miSlideIn 1s;
+}
+
+@-webkit-keyframes miSlideIn{
+  0%{
+    margin-top:150%;
+  }
+  60%{
+    margin-top:-5%;
+  }
+  100%{
+    margin-top:0%;
+  }
+}
+
+.Inicio{
+	text-decoration:none;
+}
+
+.Paisajes{
+	text-decoration:none;
+}
+
+.Retratos{
+	text-decoration:none;
 }
 
 #titulo-principal{
@@ -47,7 +78,7 @@ y al "menu" del navegador*/
 .contenedor1{
 	display:-webkit-flex;
 	display:flex;
-	width:50%;
+	width:100%;
 	padding-bottom:0 auto;
 }
 
@@ -75,7 +106,6 @@ y al "menu" del navegador*/
 	text-align:center;
 	margin:0 10px 0 0;
 	font-size:22px;
-	text-decoration:underline;
 }	
 
 /* Inicia espacio verde */
@@ -100,12 +130,13 @@ el puntero sobre ella, agrega color de sombra #82c3a6 y borde 2px y la derecha
 "retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la
 derecha cuando se coloca el puntero del ratón sobre ella.>> */
 
-#playa-huatulco{
+#huatulco{
   background-color:#d5c75f;
   padding: 40px 0;
   text-align:center;
 }
-#playa-huatulco img{
+
+#huatulco img{
   width: 80%;
   box-shadow:2px 2px 3px #02010a;
   text-align:center;
@@ -115,7 +146,7 @@ derecha cuando se coloca el puntero del ratón sobre ella.>> */
   transition: transform 1s ease-out;
 }
 
-#playa-huatulco img:hover{
+#huatulco img:hover{
 	-webkit-transform: rotate(10deg);
 	-moz-transform: rotate(10deg);
 	transform: rotate(10deg);
@@ -162,17 +193,20 @@ derecha cuando se coloca el puntero del ratón sobre ella.>> */
 /* Inicia espacio del Footer */
 
 /* << FLEX–BOX >> */
+
 .caja-footer{
 	display:-webkit-flex;
 	display:-moz-flex;
 	display:flex;
 	width:100%;
 	padding-bottom:10px;
+	padding-top:10px;
 }
 
 .footer{
-	width:40%;
+	width:100%;
 	text-align:center;
+	margin:100px auto;
 }
 /* << Termina el efecto Flex-box >> */
 
@@ -192,44 +226,40 @@ footer p{
 
 #contacto, #politicas, #redes-sociales, #derechos-reservados{
 	font-size:35px;
-	margin-bottom:10px;
+	margin-top:10px;
+	margin:0 auto;
 }
 
 #footer1, #footer2, #footer3, #footer4{
 	text-wrap:normal;
-	margin:15px;
+	margin:10px;
+	text-align:center;
 }
 
 #footer3 ul{
 	list-style-type:none;
 	font-size:24px;
+	margin:0 auto;
+	padding-top:10px;
 }
 
-.viñeta1{
-	list-style-type:none;
-	background-image:url(../Untitled-1.svg);
-	background-position:left center;
-	background-repeat:no-repeat;
-	padding-left:30px;
-	margin:10px;
+#footer3 li img{
+	width:25px;
 }
 
-.viñeta2{
-	list-style-type:none;
-	background-image:url(../Untitled-2.svg);
-	background-position:left center;
-	background-repeat:no-repeat;
-	padding-left:30px;
-	margin:10px;
+#viñeta1{
+	padding-right:10px;
+	vertical-align:baseline;
 }
 
-.viñeta3{
-	list-style-type:none;
-	background-image:url(../Untitled-3.svg);
-	background-position:left center;
-	background-repeat:no-repeat;
-	padding-left:30px;
-	margin:10px;
+#viñeta2{
+	padding-right:10px;
+	vertical-align:baseline;
+}
+
+#viñeta3{
+	padding-right:10px;
+	vertical-align:baseline;
 }
 
 footer{
@@ -237,7 +267,103 @@ footer{
 }
 
 /******************************************************/
-/* ************ < PAISAJES.HTML > *********************/
+/* *********** << PAISAJES.HTML >> ********************/
 /******************************************************/
 
+.galeria-paisajes{
+	background-color:#d5c75f;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	width:100%;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+
+#playa-1, #playa-2, #playa-3, #playa-4, #playa-5, #playa-6{
+	text-align:center;
+	border-radius:15px;
+	margin:15px;
+}
+
+.foto-playa{
+	width: 80%;
+	box-shadow:2px 2px 3px #02010a;
+	text-align:center;
+}
+
+/* Foto 1*/
+#playa-1{
+	-webkit-filter:blur(10px);
+	-moz-filter:blur(10px);
+	filter:blur(10px);
+}
+
+/* Fotos 2, 4, 6 */
+#playa-2, #playa-3, #playa-6{
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+/* Foto 3*/
+#playa-5{
+	-webkit-filter:sepia(90%);
+	-moz-filter:sepia(90%);
+	filter:sepia(90%);
+}
+
+/******************************************************/
+/* *********** << RETRATOS.HTML >> ********************/
+/******************************************************/
+
+.galeria-retratos{
+	background-color:#d5c75f;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	width:100%;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+
+#mirada-1, #mirada-2, #mirada-3, #mirada-4, #mirada-5, #mirada-6{
+	text-align:center;
+	border-radius:15px;
+	margin:15px;
+}
+
+.foto-cara{
+	width: 80%;
+	box-shadow:2px 2px 3px #02010a;
+	text-align:center;
+}
+
+/* Foto 1*/
+#mirada-1{
+	-webkit-filter:blur(10px);
+	-moz-filter:blur(10px);
+	filter:blur(10px);
+}
+
+/* Fotos 2, 4, 6 */
+#mirada-2, #mirada-3, #mirada-6{
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+/* Foto 3*/
+#mirada-5{
+	-webkit-filter:sepia(90%);
+	-moz-filter:sepia(90%);
+	filter:sepia(90%);
+}
+
+
+/******************************************************/
+/* *********** << Versión-Mobil >> ********************/
+/******************************************************/
+
+/* · · · //P */
 
