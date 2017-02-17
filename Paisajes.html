@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <link rel="stylesheet" href="css/estilos.css">
-
+<link rel="stylesheet" href="css/Movil-Estilos.css">
 <title>Comenzando con la fotografía</title>
 </head>
 
-<body> <!-- Inicia cuerpo de la pagina -->
+ <!-- Inicia cuerpo de la pagina -->
+<body id="contenido">
 
 <div title="esquema-principal">
  <header> 	
@@ -19,7 +20,7 @@
      	<div class="contenedor2"> 
       		<ul id="navegador">
       		<li><a href="index.html">Inicio</a></li>
-        	<li><a href="Paisajes.html">Paisajes</a></li>
+        	<li><a href="Paisajes.html" class="Paisajes">Paisajes</a></li>
         	<li><a href="Retratos.html">Retratos</a></li>
        	   </ul>
        </div>
@@ -27,16 +28,27 @@
    </header>
   </div>
 <!-- Inicia animación del area amarilla---------- -->        		
-   <div class="contenedor-amarillo">
-  	<section class="foto-amarillo" id="playa-huatulco">
-    	  <img src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
-    </section>  
-  </div>
+    <section class="foto-amarillo">
+     <div class="galeria-paisajes">
+      <div class="fotos">
+       <img class="foto-playa" id="playa-1" src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
+       <img class="foto-playa" id="playa-2" src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
+      </div>
+      <div class="fotos">
+       <img class="foto-playa" id="playa-3" src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
+       <img class="foto-playa" id="playa-4" src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
+      </div>
+      <div class="fotos">
+       <img class="foto-playa" id="playa-5" src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
+       <img class="foto-playa" id="playa-6" src="Playa-Huatulco.jpg" title="playa huatulco" alt="playa-huatulco" width="150px">
+      </div>
+     </div>
+    </section>
 
 
 <!-- Inicia espacio del pie de pagina [footer] -->
  <div>
- <footer>
+  <footer>
   <!-- *********************** CONTACTO *********************** -->
   <div class="caja-footer">
    <div class="footer" id="footer1">
@@ -54,20 +66,21 @@
    <div class="footer" id="footer3">
     <h4 id="redes-sociales">Redes Sociales</h4>
      <ul>
-          <li class="viñeta1">C-fotografia</li> <!-- Fb -->
-          <li class="viñeta2">C-fotografia</li> <!-- twiiter -->
-          <li class="viñeta3">C-Fotografias</li><!-- Pinterest -->
+          <li><img id="viñeta1" alt="facebook" src="Untitled-1.svg">C-fotografia</li> <!-- Fb -->
+          <li><img id="viñeta2" atl="twitter" src="Untitled-2.svg">C-fotografia</li> <!-- twitter -->
+          <li><img id="viñeta3" atl="pinterest" src="Untitled-3.svg">C-fotografia</li><!-- Pinterest -->
      </ul>
    </div>
    <!-- ********************* D-RESERVADOS ©
     ********************* --> 	
    <div class="footer" id="footer4">
    <h4 id="derechos-reservados">Derechos Reservados</h4>
-   <p>Diego Pacheco © | 2017</p>
+   <p>Diego Pacheco ©  2017</p>
    </div>
   
   </div>
  </footer>
+
 </div>
 
 </body>
